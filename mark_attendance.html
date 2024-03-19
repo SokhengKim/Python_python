@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Attendance</title>
+</head>
+<body>
+    <h1>Mark Attendance</h1>
+    <form action="{{ url_for('mark_attendance') }}" method="post">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="students">Select students:</label><br>
+        <input type="checkbox" id="student1" name="student_ids" value="1">
+        <label for="student1">Student 1</label><br>
+
+        <input type="checkbox" id="student2" name="student_ids" value="2">
+        <label for="student2">Student 2</label><br>
+
+        <!-- Add more checkboxes for other students -->
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Attendance</title>
+</head>
+<body>
+    <h1>Attendance for {{ date }}</h1>
+    <ul>
+        {% for student_id in attendance %}
+            <li>Student ID {{ student_id }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
