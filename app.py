@@ -43,7 +43,6 @@ def view_attendance():
 
 
 
-
 def mark_attendance_in_database(date, student_ids):
     conn = get_db_connection()
     for student_id in student_ids:
